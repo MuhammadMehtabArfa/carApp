@@ -1,3 +1,5 @@
+const { Italiana } = require("next/font/google");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -12,7 +14,23 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        black: {
+          main: "#000000",
+          off: "#00000",
+        },
+        light: {
+          main: "#D9D9D9",
+          off: "",
+        },
+      },
+      fontFamily: {
+        Inter: ["Inter", "sans-serif"],
+        InriaSerif: ["Inria Serif", "serif"],
+        Italiana: ["Italiana", "sans-serif"],
+      },
     },
   },
+
   plugins: [],
 };
