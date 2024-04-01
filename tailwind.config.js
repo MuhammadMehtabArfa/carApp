@@ -9,11 +9,7 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+      backgroundImage: {},
       colors: {
         black: {
           main: "#000000",
@@ -22,6 +18,9 @@ module.exports = {
         light: {
           main: "#D9D9D9",
           off: "",
+        },
+        graycard: {
+          main: "#9B9B9B",
         },
       },
       fontFamily: {
