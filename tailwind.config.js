@@ -1,3 +1,4 @@
+const { transform } = require("next/dist/build/swc");
 const { Italiana } = require("next/font/google");
 
 /** @type {import('tailwindcss').Config} */
@@ -9,6 +10,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        "loop-scroll": "loop-scroll 50s linear infinite ",
+      },
+      keyframes: {
+        "loop-scroll": {
+          from: { transform: "translateX(0vw)" },
+          to: { transform: "translateX(-100%)" },
+        },
+      },
       backgroundImage: {},
       colors: {
         black: {

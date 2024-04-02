@@ -27,7 +27,7 @@ const Navbar = () => {
           <Link
             key={index}
             href={path}
-            className=" font-bold px-[10px] py-[10px]   text-black hidden  md:text-[14px] lg:text-[17px] font-InriaSerif  md:visible "
+            className=" font-bold px-[10px] py-[10px]   text-black    md:text-[14px] lg:text-[17px] font-InriaSerif  md:visible "
           >
             {title}
           </Link>

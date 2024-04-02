@@ -37,4 +37,6 @@ body {
   .flexEnd {
     @apply flex items-center justify-end;
   }
+  
 }
+
