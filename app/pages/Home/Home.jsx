@@ -4,6 +4,7 @@ import CarCard from "@/Components/CarCard";
 import Slidescard from "./Slidescard";
 const Home = () => {
   return (
+    
     <section>
       {/* 1st part */}
       <div className=" bg-[url('/background.png')] bg-no-repeat bg-cover h-[60vh] md:h-[70vh] sm:h-[60vh] lg:h-[110vh] ">
@@ -64,7 +65,7 @@ const Home = () => {
       </div>
 
       {/* 3rd part */}
-      <div className="bg-black-main w-screen  ">
+      <div className="bg-black-main max-container  ">
         <div className="max-container padding-container p-3 ">
           <h1 className="text-white text-center text-[60px] font-Italiana  pt-4 pb-2 ">
             New Arrivals
@@ -263,7 +264,7 @@ Diesel"
             worldwide and to lead as a car exporter in Dubai
           </p>
         </div>
-        <div className="flex justify-around padding-container max-container gap-[160px] text-center">
+        <div className="flex justify-around padding-container max-container gap-[100px] text-center">
           <div>
             <h1 className="text-2xl font-Inter font-bold">
               20 <br /> Years in <br />

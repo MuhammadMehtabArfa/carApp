@@ -18,7 +18,7 @@ const StarIcon = () => (
 
 const Slidescard = () => {
   return (
-    <div className="card mt-[35px] border-red-500 border-2 rounded-[10px] w-[550px] h-auto flex-col ">
+    <div className=" mt-[35px] border-red-500 border-2 rounded-[10px] w-[550px] h-auto flex-col ">
       <div className="flex p-4 items-center">
         <div className="w-12 h-12  relative">
           <Image src="/slider.png" layout="fill" />

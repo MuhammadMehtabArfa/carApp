@@ -6,7 +6,7 @@ export const Data = {
     },
     {
       name: "Cars for sale",
-      route: "/",
+      route: "/pages/search",
     },
     {
       name: "Sell your car",

@@ -21,13 +21,13 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-between py-[10px]  bg-light-main max-container padding-container  ">
-      <div>
+    <div className=" flex justify-between py-[10px]  bg-light-main max-container padding-container  ">
+      <div className="">
         {navLinkTitles.map(({ title, path }, index) => (
           <Link
             key={index}
             href={path}
-            className=" font-bold px-[10px] py-[10px]   text-black    md:text-[14px] lg:text-[17px] font-InriaSerif  md:visible "
+            className=" md:inline-block hidden font-bold px-[10px] py-[10px]   text-black    md:text-[14px] lg:text-[17px] font-InriaSerif  "
           >
             {title}
           </Link>
