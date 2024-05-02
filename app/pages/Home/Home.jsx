@@ -4,12 +4,11 @@ import CarCard from "@/Components/CarCard";
 import Slidescard from "./Slidescard";
 const Home = () => {
   return (
-    
     <section>
       {/* 1st part */}
-      <div className=" bg-[url('/background.png')] bg-no-repeat bg-cover h-[60vh] md:h-[70vh] sm:h-[60vh] lg:h-[110vh] ">
+      <div className=" bg-[url('/background.png')] bg-no-repeat bg-cover h-[60vh]   ">
         <h1
-          className="max-container padding-container font-Inter  font-bold  text-center w-[50vw] md:float-start  pt-[50px]   
+          className="max-container padding-container font-Inter  font-bold  text-center w-[50%] md:float-start  pt-[50px]   
         text-[23px]  text-white sm:text-[30px] md:text-[40px] lg:text-[50px] "
         >
           Take the next step Of your business
@@ -103,7 +102,7 @@ Diesel"
             {" "}
             <button className=" font-Inter text-black-main bg-light-main items-center rounded-[69px] ">
               {" "}
-              <p className="p-3 text-[20px]">View Stock</p>
+              <p className="p-3 text-[10px]">View Stock</p>
             </button>
           </div>
         </div>
@@ -191,23 +190,10 @@ Diesel"
 
       <div className="bg-black-main pb-[20px] mt-[50px]">
         <h1 className="pt-4 text-white text-center text-[30px] py-[10px] ">
-          INSTAGRAM
+          Cars
         </h1>
-        <div className=" ">
-          <div className=" animate-loop-scroll flex space-x-16 text-[20px] my-8 pt-[60px] text-white">
-            <span className="">Instagram</span>
-            <span className="">Instagram</span>
-            <span className="">Instagram</span>
-            <span className="">Instagram</span>
-            <span className="">Instagram</span>
-            <span className="">Instagram</span>
-            <span className="">Instagram</span>
-            <span className="">Instagram</span>
-            <span className="">Instagram</span>
-            <span className="">Instagram</span>
-          </div>
-        </div>
-        <div className="flex flex-wrap justify-evenly padding-container max-container mt-[-140px]">
+
+        <div className="flex flex-wrap gap-4 md:gap-6 justify-evenly padding-container max-container ">
           <div className="relative w-[170px] h-[222px]">
             <Image
               src="/car1.png"
@@ -238,7 +224,7 @@ Diesel"
           Established Name in the Car Local and Export Sales
         </h1>
         <div className="font-Italiana">
-          <h1 className="text-lg md:text-xl lg:text-2xl font-InriaSerif">
+          <h1 className="text-lg text-center md:text-start md:text-xl lg:text-2xl font-InriaSerif">
             Our Vision
           </h1>
           <p className="text-sm md:text-base font-InriaSerif pl-8">
@@ -247,7 +233,7 @@ Diesel"
           </p>
         </div>
         <div className="font-Italiana">
-          <h1 className="text-lg md:text-xl lg:text-2xl font-InriaSerif">
+          <h1 className="text-lg text-center md:text-start md:text-xl lg:text-2xl font-InriaSerif">
             Our Vision
           </h1>
           <p className="text-sm md:text-base font-InriaSerif pl-8">
@@ -256,7 +242,7 @@ Diesel"
           </p>
         </div>
         <div className="font-Italiana">
-          <h1 className="text-lg md:text-xl lg:text-2xl font-InriaSerif">
+          <h1 className="text-lg md:text-xl lg:text-2xl text-center md:text-start font-InriaSerif">
             Our Vision
           </h1>
           <p className="text-sm md:text-base font-InriaSerif pl-8">
@@ -264,20 +250,19 @@ Diesel"
             worldwide and to lead as a car exporter in Dubai
           </p>
         </div>
-        <div className="flex justify-around padding-container max-container gap-[100px] text-center">
+        <div className=" gap-[37px] md:gap-[80px] lg:gap-[90px] text-center flex justify-between">
           <div>
-            <h1 className="text-2xl font-Inter font-bold">
-              20 <br /> Years in <br />
-              business
+            <h1 className="md:text-[20px] lg:text-[25px] font-Inter font-bold">
+              20 <br /> Years
             </h1>
           </div>
           <div>
-            <h1 className="text-2xl font-Inter font-bold">
+            <h1 className="md:text-[20px] lg:text-[25px] font-Inter font-bold">
               50 <br /> Cars sold{" "}
             </h1>
           </div>
           <div>
-            <h1 className="text-2xl font-Inter font-bold">
+            <h1 className="md:text-[20px] lg:text-[25px] font-Inter font-bold">
               150 <br /> Inventory{" "}
             </h1>
           </div>
@@ -285,11 +270,11 @@ Diesel"
       </div>
       {/* 6th section */}
       <div className="bg-black-main pb-[20px] ">
-        <h1 className="pt-4 text-white text-center text-[13px] py-[10px] ">
+        <h1 className="pt-4 md:text-[20px] lg:text-[30px] text-white text-center text-[15px] py-[10px] ">
           Our Partners
         </h1>
         <div className=" ">
-          <div className=" animate-loop-scroll flex space-x-16 text-[30px]   text-white">
+          <div className="animate-loop-scroll flex space-x-16 text-[13px] md:text-[18px] lg:text-[27px]   text-white ">
             <span className="">THAHAAF</span>
             <span className="">Instagram</span>
             <span className="">Instagram</span>
@@ -319,10 +304,10 @@ Diesel"
           Our Cars, Your Pride
         </h1>
         <div className="flex">
-          <div className="relative  w-[50vw] h-[400px]">
+          <div className="relative  w-[50%] h-[400px]">
             <Image src="/cardd.png" layout="fill" className="object-cover" />
           </div>
-          <div className="relative h-[400px]  w-[50vw] ">
+          <div className="relative h-[400px]  w-[50%] ">
             <Image src="/carddd.png" layout="fill" className="object-cover" />
           </div>
         </div>
@@ -330,12 +315,12 @@ Diesel"
 
       {/* 8th section */}
       <div className=" bg-black-main text-white py-4 flex flex-col items-center font-Italiana max-container padding-container">
-        <h1 className="font-semi-bold text-[40px] py-[15px] font-Italiana">
+        <h1 className="font-semi-bold text-[23px] md:text-[28px] lg:text-[33px] py-[15px] font-Italiana">
           Our Blog
         </h1>
-        <div className=" flex justify-around  gap-8 text-justify ">
-          <div className="w-[25%]    ">
-            <h1 className="pb-3"> Blog 1</h1>
+        <div className=" grid grid-cols-1 justify-between  md:flex md:flex-wrap gap-8 text-justify ">
+          <div className="md:w-[25%]  ">
+            <h1 className="pb-3  md:text-start text-center"> Blog 1</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur. Tempus quis facilisis elit
               dolor adipiscing egestas morbi hac. Eget consectetur rhoncus nunc
@@ -347,8 +332,8 @@ Diesel"
               source
             </a>
           </div>
-          <div className="w-[25%]  ">
-            <h1 className="pb-3"> Blog 2</h1>
+          <div className="md:w-[25%]  ">
+            <h1 className="pb-3 md:text-start text-center"> Blog 2</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur. Tempus quis facilisis elit
               dolor adipiscing egestas morbi hac. Eget consectetur rhoncus nunc
@@ -360,8 +345,8 @@ Diesel"
               source
             </a>
           </div>
-          <div className="w-[25%]  ">
-            <h1 className="pb-3">Blog 3</h1>
+          <div className="md:w-[25%]  ">
+            <h1 className="pb-3  md:text-start text-center">Blog 3</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur. Tempus quis facilisis elit
               dolor adipiscing egestas morbi hac. Eget consectetur rhoncus nunc

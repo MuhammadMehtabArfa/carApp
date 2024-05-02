@@ -1,8 +1,7 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import CarCard from "@/Components/CarCard";
 import Searchbar from "./Searchbar";
-import Sortbar from "./Sortbar";
 
 const Search = () => {
   const carData = [

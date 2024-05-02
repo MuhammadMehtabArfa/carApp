@@ -12,7 +12,7 @@ const CarCard = ({ img, name, year, transmission, fuel, speed }) => {
           <h1>{name}</h1>
         </div>
 
-        <div className=" flex justify-between ">
+        <div className=" flex justify-around ">
           <div className="flex  items-center">
             <div className=" relative">
               <Image

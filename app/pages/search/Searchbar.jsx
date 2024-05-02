@@ -17,9 +17,7 @@ const Searchbar = ({handleSubmitt, value, setValue , sort, setSort }) => {
           id=""
         />
         <div className=" flex items-center">
-          <label htmlFor="currency" className="sr-only">
-            Currency
-          </label>
+        
           <select
             value={sort}
             onChange={(e) => setSort(`${e.target.value}`)}

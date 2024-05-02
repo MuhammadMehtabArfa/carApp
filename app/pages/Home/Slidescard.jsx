@@ -6,7 +6,7 @@ const StarIcon = () => (
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
     fill="currentColor"
-    className="w-6 h-6 fill-yellow-600"
+    className="w-3 h-3 md:w-5 md:h-5 fill-yellow-600"
   >
     <path
       fillRule="evenodd"
@@ -18,13 +18,13 @@ const StarIcon = () => (
 
 const Slidescard = () => {
   return (
-    <div className=" mt-[35px] border-red-500 border-2 rounded-[10px] w-[550px] h-auto flex-col ">
+    <div className=" mt-[35px] border-red-500 border-2 rounded-[10px] md:w-[550px]  w-[350px] flex-col ">
       <div className="flex p-4 items-center">
-        <div className="w-12 h-12  relative">
+        <div className="w-9 h-9 md:w-12 md:h-12  relative">
           <Image src="/slider.png" layout="fill" />
         </div>
         <div className="ml-4">
-          <h1 className="font-bold text-xl">Sami B</h1>
+          <h1 className="font-bold text-md md:text-lg lg:text-xl">Sami B</h1>
           <div className="flex">
             <StarIcon />
             <StarIcon />
@@ -33,9 +33,13 @@ const Slidescard = () => {
             <StarIcon />
           </div>
         </div>
-       
       </div>
-      <p className="p-4">Lorem ipsum dolor sit amet consectetur. Eget eu dui venenatis pharetra euismod tincidunt a tincidunt. Est venenatis id ut quam curabitur scelerisque sagittis sed viverra. Nullam sagittis adipiscing duis semper ornare mollis iaculis. Ultricies in eget mi aliquet aliquet est.</p>
+      <p className="p-4 overflow-auto h-[100px] md:h-[130px] md:overflow-hidden">
+        Lorem ipsum dolor sit amet consectetur. Eget eu dui venenatis pharetra
+        euismod tincidunt a tincidunt. Est venenatis id ut quam curabitur
+        scelerisque sagittis sed viverra. Nullam sagittis adipiscing duis semper
+        ornare mollis iaculis. Ultricies in eget mi aliquet aliquet est.
+      </p>
     </div>
   );
 };

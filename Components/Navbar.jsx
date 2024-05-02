@@ -21,7 +21,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className=" flex justify-between py-[10px]  bg-light-main max-container padding-container  ">
+    <div className=" flex justify-between py-[10px]  bg-white max-container padding-container  ">
       <div className="">
         {navLinkTitles.map(({ title, path }, index) => (
           <Link
@@ -47,7 +47,7 @@ const Navbar = () => {
               <Link
                 key={index}
                 href={path}
-                className=" font-bold px-[10px] py-[10px]   text-black md:text-[14px] lg:text-[17px] font-InriaSerif  md:hidden bg-white mb-2 w-[400%] text-center "
+                className=" font-bold px-[10px] py-[10px]   text-black md:text-[14px] lg:text-[17px] font-InriaSerif  md:hidden bg-white mb-2  text-center "
               >
                 {title}
               </Link>
@@ -58,11 +58,7 @@ const Navbar = () => {
 
       <div className=" w-[70px] h-[70px] relative">
         {" "}
-        <Image
-          src="/logo.png"
-          alt=""
-          fill
-        />
+        <Image src="/logo.png" alt="" fill />
       </div>
     </div>
   );
