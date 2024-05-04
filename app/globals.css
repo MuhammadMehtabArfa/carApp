@@ -11,6 +11,7 @@
 
 body {
   font-family: swap;
+  
 }
 
 @layer components {
@@ -37,6 +38,4 @@ body {
   .flexEnd {
     @apply flex items-center justify-end;
   }
-  
 }
-

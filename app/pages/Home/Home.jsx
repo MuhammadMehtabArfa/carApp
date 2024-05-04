@@ -1,4 +1,5 @@
 import React from "react";
+import Marquee from "react-fast-marquee";
 import Image from "next/image";
 import CarCard from "@/Components/CarCard";
 import Slidescard from "./Slidescard";
@@ -9,20 +10,20 @@ const Home = () => {
       <div className=" bg-[url('/background.png')] bg-no-repeat bg-cover h-[60vh]   ">
         <h1
           className="max-container padding-container font-Inter  font-bold  text-center w-[50%] md:float-start  pt-[50px]   
-        text-[23px]  text-white sm:text-[30px] md:text-[40px] lg:text-[50px] "
+        text-[23px] outline-black-main bg-black-main bg-opacity-10  text-white sm:text-[30px] md:text-[40px] lg:text-[50px] "
         >
           Take the next step Of your business
         </h1>
       </div>
 
       {/* 2nd part */}
-      <div className=" bg-light-main py-4 flex flex-col items-center font-Italiana max-container padding-container">
-        <h1 className="font-semi-bold text-[40px] py-[15px] font-Italiana">
-          Welcome to Barugazi Motors
+      <div className=" bg-white text-black-main py-4 flex flex-col items-center font-Italiana max-container padding-container mt-[40px]">
+        <h1 className="font-semi-bold text-[23px] md:text-[28px] lg:text-[33px] py-[15px] font-Italiana">
+          Welcome to Devoted Motors
         </h1>
-        <div className=" flex justify-around  gap-8 text-justify ">
-          <div className="w-[25%]    ">
-            <h1 className="pb-3"> Exclusive Car Discovery</h1>
+        <div className=" grid grid-cols-1 justify-between  md:flex md:flex-wrap gap-8 text-justify ">
+          <div className="md:w-[25%]  ">
+            <h1 className="pb-3  md:text-start text-center"> </h1>
             <p>
               Lorem ipsum dolor sit amet consectetur. Tempus quis facilisis elit
               dolor adipiscing egestas morbi hac. Eget consectetur rhoncus nunc
@@ -31,11 +32,11 @@ const Home = () => {
               lectus senectus.
             </p>
             <a href="" className=" underline hover:text-blue-700">
-              see more
+              source
             </a>
           </div>
-          <div className="w-[25%]  ">
-            <h1 className="pb-3"> Exclusive Car Discovery</h1>
+          <div className="md:w-[25%]  ">
+            <h1 className="pb-3 md:text-start text-center"> Blog 2</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur. Tempus quis facilisis elit
               dolor adipiscing egestas morbi hac. Eget consectetur rhoncus nunc
@@ -44,11 +45,11 @@ const Home = () => {
               lectus senectus.
             </p>
             <a href="" className=" underline hover:text-blue-700">
-              see more
+              source
             </a>
           </div>
-          <div className="w-[25%]  ">
-            <h1 className="pb-3"> Exclusive Car Discovery</h1>
+          <div className="md:w-[25%]  ">
+            <h1 className="pb-3  md:text-start text-center">Blog 3</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur. Tempus quis facilisis elit
               dolor adipiscing egestas morbi hac. Eget consectetur rhoncus nunc
@@ -57,7 +58,7 @@ const Home = () => {
               lectus senectus.
             </p>
             <a href="" className=" underline hover:text-blue-700">
-              see more
+              source
             </a>
           </div>
         </div>
@@ -66,7 +67,7 @@ const Home = () => {
       {/* 3rd part */}
       <div className="bg-black-main max-container  ">
         <div className="max-container padding-container p-3 ">
-          <h1 className="text-white text-center text-[60px] font-Italiana  pt-4 pb-2 ">
+          <h1 className="text-white text-center text-[30px] md:text-[45px] lg:text-[60px] font-Italiana  pt-4 pb-2 ">
             New Arrivals
           </h1>
           <div className="flex items-center justify-around flex-wrap gap-2 max-container padding-container ">
@@ -102,7 +103,9 @@ Diesel"
             {" "}
             <button className=" font-Inter text-black-main bg-light-main items-center rounded-[69px] ">
               {" "}
-              <p className="p-3 text-[10px]">View Stock</p>
+              <p className="p-3 text-[10px] md:text-[20px] hover:bg-white hover:text-black-main rounded-[69px]">
+                View Stock
+              </p>
             </button>
           </div>
         </div>
@@ -219,8 +222,8 @@ Diesel"
       </div>
 
       {/* 5th section */}
-      <div className="bg-light-main font-Italiana pt-[20px] pb-[20px] padding-container flex flex-col gap-3 justify-around items-center">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl">
+      <div className="bg-light-main font-Italiana pt-[20px] pb-[20px] padding-container flex flex-col gap-3 justify-around text-center md:text-start items-center">
+        <h1 className="text-2xl text-center md:text-start  md:text-3xl lg:text-4xl">
           Established Name in the Car Local and Export Sales
         </h1>
         <div className="font-Italiana">
@@ -273,29 +276,39 @@ Diesel"
         <h1 className="pt-4 md:text-[20px] lg:text-[30px] text-white text-center text-[15px] py-[10px] ">
           Our Partners
         </h1>
-        <div className=" ">
-          <div className="animate-loop-scroll flex space-x-16 text-[13px] md:text-[18px] lg:text-[27px]   text-white ">
-            <span className="">THAHAAF</span>
-            <span className="">Instagram</span>
-            <span className="">Instagram</span>
-            <span className="">Instagram</span>
-            <span className="">Instagram</span>
-            <span className="">Instagram</span>
-            <span className="">Instagram</span>
-            <span className="">Instagram</span>
-            <span className="">Instagram</span>
-            <span className="">Instagram</span>
-            <span className="">Instagram</span>
-            <span className="">Instagram</span>
-            <span className="">Instagram</span>
-            <span className="">Instagram</span>
-            <span className="">Instagram</span>
-            <span className="">Instagram</span>
-            <span className="">Instagram</span>
-            <span className="">Instagram</span>
-            <span className="">Instagram</span>
+        <Marquee speed={2}>
+          <div className="animate-loop-scroll overflow-hidden  flex space-x-16 text-[13px] md:text-[18px] lg:text-[27px]   text-white ">
+            <span class="">Ferrari Auto Parts</span>,
+            <span class="">Mustang Car Dealerships</span>,
+            <span class="">Instagram Service Centers</span>,
+            <span class="">Honda Rental Services</span>,
+            <span class="">Toyota Technologies</span>,
+            <span class="">Ferrari Insurance Solutions</span>,
+            <span class="">Mustang Reviews</span>,
+            <span class="">Instagram Events</span>,
+            <span class="">Honda Parts Hub</span>,
+            <span class="">Toyota Dealership Network</span>,
+            <span class="">Ferrari Car Care</span>,
+            <span class="">Mustang Rentals</span>,
+            <span class="">Instagram Automotive Innovations</span>,
+            <span class="">Honda Drive Expo</span>,
+            <span class="">Toyota Repair Services</span>,
+            <span class="">Ferrari Auto Blog</span>,
+            <span class="">Mustang Trade Shows</span>,
+            <span class="">Instagram Wheels</span>,
+            <span class="">Honda Tech Solutions</span>,
+            <span class="">Toyota Car Reviews</span>,
+            <span class="">Ferrari Event Management</span>,
+            <span class="">Mustang Insurance Partners</span>,
+            <span class="">Instagram Drive</span>,
+            <span class="">Honda Rental Network</span>,
+            <span class="">Toyota Dealership Alliance</span>,
+            <span class="">Ferrari Innovation Hub</span>,
+            <span class="">Mustang Service Centers</span>,
+            <span class="">Instagram Car Care</span>,
+            <span class="">Honda Drive Expo</span>.
           </div>
-        </div>
+        </Marquee>
       </div>
 
       {/* 7th section */}
