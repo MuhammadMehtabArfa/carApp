@@ -34,7 +34,7 @@ const Slidescard = () => {
           </div>
         </div>
       </div>
-      <p className="p-4 overflow-auto h-[100px] md:h-[130px] md:overflow-hidden">
+      <p className="p-4 overflow-auto ThinScrollbar h-[100px] md:h-[130px] md:overflow-hidden">
         Lorem ipsum dolor sit amet consectetur. Eget eu dui venenatis pharetra
         euismod tincidunt a tincidunt. Est venenatis id ut quam curabitur
         scelerisque sagittis sed viverra. Nullam sagittis adipiscing duis semper

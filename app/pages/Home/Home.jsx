@@ -70,7 +70,7 @@ const Home = () => {
           <h1 className="text-white text-center text-[30px] md:text-[45px] lg:text-[60px] font-Italiana  pt-4 pb-2 ">
             New Arrivals
           </h1>
-          <div className="flex items-center justify-around flex-wrap gap-2 max-container padding-container ">
+          <div className="flex items-center justify-around flex-wrap gap-3 max-container padding-container ">
             <CarCard
               img="/car1.png"
               name="Posrch Panamera 2024 - Big Deal"

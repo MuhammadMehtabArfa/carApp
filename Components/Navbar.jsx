@@ -1,67 +1,95 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { Data } from "@/constant/Data";
 import Image from "next/image";
 import Link from "next/link";
-
+import "react-modern-drawer/dist/index.css";
+import Drawer from "react-modern-drawer";
+const Navbardata = [
+  {
+    name: "Home",
+    route: "/",
+  },
+  {
+    name: "Cars for sale",
+    route: "/pages/search",
+  },
+  {
+    name: "Sell your car",
+    route: "/",
+  },
+  {
+    name: "Services",
+    route: "/",
+  },
+  {
+    name: "About us",
+    route: "/",
+  },
+  {
+    name: "Contact us",
+    route: "/",
+  },
+  {
+    name: "Blog",
+    route: "/",
+  },
+];
 const Navbar = () => {
-  const [navLinkTitles, setNavLinkTitles] = useState([]);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const titles = Data.Navbardata.map((navItem) => ({
-      title: navItem.name,
-      path: navItem.route,
-    }));
-    setNavLinkTitles(titles);
-  }, []);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+  const [isOpen, setIsOpen] = React.useState(false);
+  const toggleDrawer = () => {
+    setIsOpen((prevState) => !prevState);
   };
-
   return (
-    <div className=" flex justify-between py-[10px]  bg-white max-container padding-container  ">
-      <div className="">
-        {navLinkTitles.map(({ title, path }, index) => (
-          <Link
-            key={index}
-            href={path}
-            className=" md:inline-block hidden font-bold px-[10px] py-[10px]   text-black    md:text-[14px] lg:text-[17px] font-InriaSerif  "
-          >
-            {title}
-          </Link>
-        ))}
-        <div>
-          <button className="  md:hidden block  " onClick={toggleMenu}>
-            Menu
-          </button>
-        </div>
-      </div>
-      {/* small screen menu */}
-      {isMenuOpen && (
-        <div className="md:hidden">
-          {" "}
-          <div className=" items-center gap-1 flex flex-col">
-            {navLinkTitles.map(({ title, path }, index) => (
+    <>
+      {/* for big screens */}
+
+      <div className="hidden md:flex justify-between bg-transparent w-full px-3 py-3">
+        {/* links */}
+        <div className="flex pt-3 gap-4">
+          {Navbardata.map(({ name, route }, index) => {
+            return (
               <Link
                 key={index}
-                href={path}
-                className=" font-bold px-[10px] py-[10px]   text-black md:text-[14px] lg:text-[17px] font-InriaSerif  md:hidden bg-white mb-2  text-center "
-                onClick={()=>setIsMenuOpen(false)}
+                href={route}
+                className="font-bold hover:text-red-600
+               "
               >
-                {title}
+                {name}
               </Link>
-            ))}
-          </div>
+            );
+          })}
         </div>
-      )}
-
-      <div className=" w-[70px] h-[70px] relative">
-        {" "}
-        <Image src="/logo.png" alt="" fill />
+        {/* logo*/}
+        <div>
+        <div className="w-10 h-10 md:w-12 md:h-12  relative">
+          <Image src="/logo.png" layout="fill" />
+        </div>
+        </div>
       </div>
-    </div>
+
+      {/* for small screens */}
+      <button  onClick={toggleDrawer} className="md:hidden  p-2">
+      <div className="w-10 h-10 md:w-12 md:h-12  relative">
+          <Image src="/logo.png" layout="fill" />
+        </div>
+      </button>
+      <Drawer open={isOpen} onClose={toggleDrawer} direction="right">
+        <div className="flex bg-[url('/background.png')] h-full items-center pt-3 font-extrabold w-full flex-col gap-4">
+          {Navbardata.map(({ name, route }, index) => {
+            return (
+              <Link
+                key={index}
+                href={route}
+                className=" hover:text-red-500
+                 hover:bg-gray-700 w-full text-center text-white rounded-md px-3 py-2 text-base font-medium"
+              >
+                <button onClick={() => setIsOpen(false)}>{name}</button>
+              </Link>
+            );
+          })}
+        </div>
+      </Drawer>
+    </>
   );
 };
 
