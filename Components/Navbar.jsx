@@ -74,7 +74,7 @@ const Navbar = () => {
         </div>
       </button>
       <Drawer open={isOpen} onClose={toggleDrawer} direction="right" className="!w-full">
-        <div className="flex bg-[url('/background.png')] h-full items-center pt-3 font-extrabold w-full flex-col gap-4">
+        <div className="flex bg-white h-full items-center pt-3 font-extrabold w-full flex-col gap-4">
           {Navbardata.map(({ name, route }, index) => {
             return (
               <Link
