@@ -63,10 +63,10 @@ const CarCard = ({ img, name, year, transmission, fuel, speed }) => {
         </div>
 
         <div className="flex justify-around gap-1 mt-2 ">
-          <button className="w-[50%] bg-black-main text-center px-4 text-white font-Inter">
+          <button className="w-[50%] bg-black-main text-center px-4 text-white font-Inter hover:bg-light-main hover:text-black-main">
             I’m Interested
           </button>
-          <button className="w-[50%] bg-light-main text-center px-4 py-1 text-slate-600 font-Inter">
+          <button className="w-[50%] hover:bg-black-main hover:text-white bg-light-main text-center px-4 py-1 text-slate-600 font-Inter">
             View
           </button>
         </div>
