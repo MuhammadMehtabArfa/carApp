@@ -68,12 +68,12 @@ const Navbar = () => {
       </div>
 
       {/* for small screens */}
-      <button  onClick={toggleDrawer} className="md:hidden  p-2">
+      <button  onClick={toggleDrawer} className="md:hidden inline-block  p-2">
       <div className="w-10 h-10 md:w-12 md:h-12  relative">
           <Image src="/logo.png" layout="fill" />
         </div>
       </button>
-      <Drawer open={isOpen} onClose={toggleDrawer} direction="right">
+      <Drawer open={isOpen} onClose={toggleDrawer} direction="right" className="!w-full">
         <div className="flex bg-[url('/background.png')] h-full items-center pt-3 font-extrabold w-full flex-col gap-4">
           {Navbardata.map(({ name, route }, index) => {
             return (
